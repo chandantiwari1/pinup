@@ -281,14 +281,14 @@
       },
       links: {
         casino: {
-          site: "https://pupredirect.com/cmrp",
-          phone: "https://pupredirect.com/casPpMobReg",
+          site: "https://topu2020.com/CGE4l9gZ",
+          phone: "https://topu2020.com/CGE4l9gZ",
           email: "https://pupredirect.com/regland",
           terms: "https://pupredirect.com/cmrp",
         },
         sport: {
-          site: "https://pugoreal.com/mainpage",
-          phone: "https://pugoreal.com/betppMobReg",
+          site: "https://topu2020.com/Sk7PuYmE",
+          phone: "https://topu2020.com/Sk7PuYmE",
           email: "https://topu2020.com/Sk7PuYmE",
           terms: "https://pugoreal.com/mainpage",
           apk: "https://casinopin-up.onelink.me/BjwB/swcqukof",
@@ -419,6 +419,17 @@
         },
       },
     };
+
+    // const form = document.getElementById("my-form");
+    const selectType = document.querySelector(".dropdown-select");
+    // selectType.addEventListener("change", () => {
+    //   if (selectType.value === "cricket") {
+    //     form.action = "cricket url";
+    //   } else if (selectType.value === "casino") {
+    //     form.action = "casino url";
+    //   }
+    // });
+    console.log(selectType);
   </script>
   <style type="text/css">
     @font-face {
@@ -507,6 +518,7 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./main.css" />
   </head>
+
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
@@ -693,6 +705,33 @@
                 </button>
                 <ul class="select-currency__list"></ul>
               </div>
+              <div class="dropdown" style="margin-top: 10px">
+                <select class="dropdown-select" onchange="myFunc()">
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="casino">Casino</option>
+                  <option value="cricket">Cricket</option>
+                </select>
+              </div>
+
+              <style>
+                .dropdown-select {
+                  background-color: #fbfbfb;
+                  color: #000;
+                  border: 1px solid #e4e4e4;
+                  border-radius: 3px;
+                  height: 36px;
+                  line-height: 1.5;
+                  max-width: 100%;
+                  width: 100%;
+                  font-size: 16px;
+                  padding: 5px 0 5px 14px;
+                }
+
+                .dropdown-select option {
+                  color: #000;
+                  background-color: #fbfbfb;
+                }
+              </style>
             </div>
             <button class="submit-btn" type="button">Register now</button>
             <div class="forms__questions">
@@ -813,6 +852,33 @@
                 <ul class="select-currency__list"></ul>
               </div>
             </div>
+            <div class="dropdown" style="margin-top: 10px">
+              <select class="dropdown-select dropdown-select2" onchange="EmailFunctionmyFunc()">
+                <option value="" disabled selected>Select an option</option>
+                <option value="casino">Casino</option>
+                <option value="cricket">Cricket</option>
+              </select>
+            </div>
+
+            <style>
+              .dropdown-select {
+                background-color: #fbfbfb;
+                color: #000;
+                border: 1px solid #e4e4e4;
+                border-radius: 3px;
+                height: 36px;
+                line-height: 1.5;
+                max-width: 100%;
+                width: 100%;
+                font-size: 16px;
+                padding: 5px 0 5px 14px;
+              }
+
+              .dropdown-select option {
+                color: #000;
+                background-color: #fbfbfb;
+              }
+            </style>
             <button class="submit-btn" type="button">Register now</button>
             <div class="forms__questions">
               <span class="alredy-registred">Already have an account?</span>
@@ -866,43 +932,79 @@
       <div class="alert__text"></div>
     </div>
     <script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+      // <![CDATA[  <-- For SVG support
+
+      function myFunc() {
+        const forms = document.getElementById("phone-form");
+        const selectTypes = document.querySelector(".dropdown-select");
+        if (selectTypes.value === "cricket") {
+          forms.action = "https://topu2020.com/Sk7PuYmE";
+        } else if (selectTypes.value === "casino") {
+          forms.action = "https://topu2020.com/CGE4l9gZ";
+        }
+        console.log('FIrst FUnction is running')
+      }
+      function EmailFunctionmyFunc() {
+        const forms = document.getElementById("email-form");
+        const selectTypes = document.querySelector(".dropdown-select2");
+        if (selectTypes.value === "cricket") {
+          forms.action = "https://topu2020.com/Sk7PuYmE";
+        } else if (selectTypes.value === "casino") {
+          forms.action = "https://topu2020.com/CGE4l9gZ";
+        }
+        console.log("FUnction is running");
+      }
+      console.log(selectTypes);
+
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
     <script src="./bundle.js"></script>
-    
   </body>
 </html>
