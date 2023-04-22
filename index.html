@@ -492,7 +492,7 @@
     <meta
       name="keywords"
       content="gambling in india, Best online gambling sites, gambling sites, gambling games, Best gambling betting website in india, rust gambling, sports gambling in india, gambling websites worldwide, illegal gambling, gamstop gambling, roobet gambling, responsible gambling, twitch gambling, casino gambling, gambling machine, bovada gambling, mostbet gambling, gambling chips, free gambling, gambling insider, reddit gambling, gambling casino, mobile gambling, bravada gambling, gambling table, baccarat gambling, gambling cards, roulette gambling, nba gambling, football gambling, roblox gambling, hollywood gambling, gamdom, bets, sport bet, online betting, online casinos, phone casino, betmgm casino, casino sites, betting online, pinup slots, bodog india, Pinup casino, Pinup roulette, Pinup india, Pinup betting, Bet in pinup, Bet in ipl on pin up, Best betting platform in india, Best gambling payout, Bonus in pin up, Pin up live roulette, Pin up dragon tiger, Pin up andar bahar, Pin up ipl bet live, Pin up best odd betting website, Betting in ipl in pin up, fruit cut pin up,आईपीएल 2023,IPL 2023 से लाखों कमाएं,betindia,Aviator से कमाएं लाखों|,Sports Betting in India.,All over worls Sports in one betting sites pinup,dragontiger.लकीजेट से लाखों कमाएं,भारत में खेल सट्टेबाजी,Pin-Up Cricket, Pin-Up Casino, cricket games, casino games, online gaming, secure payments, India Premier League, Best Betting Sites in India, IPL Instant Withdrawal & Deposits, Aviator, Aviator Hack, Best Online Casinos in India, Pinup IPL, Pinup in India, Pinup Aviator, Luckjet, Luckyjet" />
-    />
+    
     <meta name="author" content="Your Name" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap"
@@ -735,7 +735,7 @@
                 }
               </style>
             </div>
-            <button class="submit-btn" type="button">Register now</button>
+            <button class="submit-btn" type="button" onclick="handleSubmit()">Register now</button>
             <!-- <div class="forms__questions">
               <span class="alredy-registred">Already have an account?</span>
               <a class="forms__signin-link redirectlink" href="#">Log in</a>
@@ -938,14 +938,16 @@
     </div>
     <script>
       // <![CDATA[  <-- For SVG support
+      let url;
 
       function myFunc() {
         const forms = document.getElementById("phone-form");
         const selectTypes = document.querySelector(".dropdown-select");
         if (selectTypes.value === "cricket") {
-          forms.action = "https://topu2020.com/Sk7PuYmE";
+          url = "https://topu2020.com/Sk7PuYmE";
+      
         } else if (selectTypes.value === "casino") {
-          forms.action = "https://topu2020.com/CGE4l9gZ";
+          url = "https://topu2020.com/CGE4l9gZ";
         }
         console.log("FIrst FUnction is running");
       }
@@ -953,14 +955,18 @@
         const forms = document.getElementById("email-form");
         const selectTypes = document.querySelector(".dropdown-select2");
         if (selectTypes.value === "cricket") {
-          forms.action = "https://topu2020.com/Sk7PuYmE";
+          url = "https://topu2020.com/Sk7PuYmE";
         } else if (selectTypes.value === "casino") {
-          forms.action = "https://topu2020.com/CGE4l9gZ";
+          url = "https://topu2020.com/CGE4l9gZ";
         }
         console.log("FUnction is running");
       }
       console.log(selectTypes);
 
+      function handleSubmit(){
+        window.location.href = url;
+        console.log('console')
+      }
       if ("WebSocket" in window) {
         (function () {
           function refreshCSS() {
