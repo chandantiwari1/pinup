@@ -469,29 +469,31 @@
     }
   </style>
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-46QF17CZ0E"
+    ></script>
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-P6N4LQV");
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-46QF17CZ0E");
     </script>
-    <!-- End Google Tag Manager -->
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta content="telephone=no" name="format-detection" />
-    <meta name="HandheldFriendly" content="true" />
-    <title>25 000₹ ON YOUR FIRST DEPOSIT</title>
+    <meta
+      name="description"
+      content="Welcome to Pin-Up Cricket and Casino, the ultimate gaming experience for fans of cricket and casino games. Explore our wide selection of games and enjoy secure and reliable payment options."
+    />
+    <meta
+      name="keywords"
+      content="आईपीएल 2023,IPL 2023 से लाखों कमाएं,betindia,Aviator से कमाएं लाखों|,Sports Betting in India.,All over worls Sports in one betting sites pinup,dragontiger.लकीजेट से लाखों कमाएं,भारत में खेल सट्टेबाजी,Pin-Up Cricket, Pin-Up Casino, cricket games, casino games, online gaming, secure payments, India Premier League, Best Betting Sites in India, IPL Instant Withdrawal & Deposits, Aviator, Aviator Hack, Best Online Casinos in India, Pinup IPL, Pinup in India, Pinup Aviator, Luckjet, Luckyjet" />
+    />
+    <meta name="author" content="Your Name" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap"
       rel="stylesheet"
@@ -853,7 +855,10 @@
               </div>
             </div>
             <div class="dropdown" style="margin-top: 10px">
-              <select class="dropdown-select dropdown-select2" onchange="EmailFunctionmyFunc()">
+              <select
+                class="dropdown-select dropdown-select2"
+                onchange="EmailFunctionmyFunc()"
+              >
                 <option value="" disabled selected>Select an option</option>
                 <option value="casino">Casino</option>
                 <option value="cricket">Cricket</option>
@@ -942,7 +947,7 @@
         } else if (selectTypes.value === "casino") {
           forms.action = "https://topu2020.com/CGE4l9gZ";
         }
-        console.log('FIrst FUnction is running')
+        console.log("FIrst FUnction is running");
       }
       function EmailFunctionmyFunc() {
         const forms = document.getElementById("email-form");
